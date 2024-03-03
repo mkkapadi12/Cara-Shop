@@ -18,7 +18,7 @@ const App = () => {
         <GlobalStyle />
         <Header />
         <Routes>
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/shop" element={<Shop />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/blog" element={<Blog />} />
