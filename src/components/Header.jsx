@@ -43,12 +43,23 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar
+      position="static"
+      sx={{
+        background: "lightCyan",
+        boxShadow: "0 5px 15px rgba(0, 0, 0, 0.6)",
+      }}
+    >
+      <Container
+        maxWidth="xl"
+        style={{
+          boxShadow: "0 5px 15px rgba(0, 0, 0, 0.6)",
+        }}
+      >
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
 
-          <NavLink to="/home" style={style}>
+          <NavLink to="/" style={style}>
             <Typography
               variant="h6"
               noWrap
@@ -66,7 +77,7 @@ const Header = () => {
               <img
                 src="/images/logo.png"
                 alt="logo"
-                style={{ filter: "invert(1)" }}
+                // style={{ filter: "invert(1)" }}
               />
             </Typography>
           </NavLink>
@@ -77,7 +88,7 @@ const Header = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="black"
             >
               <MenuIcon />
             </IconButton>
@@ -102,7 +113,10 @@ const Header = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <NavLink to={page.toLowerCase()} style={style}>
+                    <NavLink
+                      to={page === "Home" ? "/" : page.toLowerCase()}
+                      style={style}
+                    >
                       {page}
                     </NavLink>
                   </Typography>
@@ -125,22 +139,21 @@ const Header = () => {
               textDecoration: "none",
             }}
           >
-            <NavLink to="/home" style={style}>
-              <img
-                src="/images/logo.png"
-                alt="logo"
-                style={{ filter: "invert(1)" }}
-              />
+            <NavLink to="/" style={style}>
+              <img src="/images/logo.png" alt="logo" />
             </NavLink>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <NavLink to={page.toLowerCase()} style={style}>
+              <NavLink
+                to={page === "Home" ? "/" : page.toLowerCase()}
+                style={style}
+              >
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 2, color: "black", display: "block" }}
                 >
                   {page}
                 </Button>
@@ -156,6 +169,7 @@ const Header = () => {
                   src="/images/profile.jpg"
                   style={{
                     objectFit: "cover",
+                    border: "1px solid black",
                   }}
                 />
               </IconButton>
