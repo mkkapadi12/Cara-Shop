@@ -1,7 +1,13 @@
+import styled from "@emotion/styled";
 import React from "react";
 
 const ErrorPage = () => {
-  return <div>404 Error Page</div>;
+  return <Wrapper>404 Error Page</Wrapper>;
 };
+
+const Wrapper = styled.section`
+  height: 100vh;
+  text-align: center;
+`;
 
 export default ErrorPage;
