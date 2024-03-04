@@ -94,10 +94,10 @@ const Footer = () => {
             <div className="sub-footer">
               <h3>Install App</h3>
               <p>From App Store or Google Play</p>
-              <img src="/images/app.jpg" alt="Apple store" />
-              <img src="/images/play.jpg" alt="Google Play store" />
+              <img src="/images/pay/app.jpg" alt="Apple store" />
+              <img src="/images/pay/play.jpg" alt="Google Play store" />
               <p>Secured Payment Gateways</p>
-              <img src="/images/pay.png" alt="Please pay ammout" />
+              <img src="/images/pay/pay.png" alt="Please pay ammout" />
             </div>
           </div>
         </div>

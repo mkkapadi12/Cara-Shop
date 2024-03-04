@@ -1,0 +1,26 @@
+[
+  {
+    "img": "/images/feature/f1.png",
+    "name": "Free Shipping"
+  },
+  {
+    "img": "/images/feature/f2.png",
+    "name": "Online Order"
+  },
+  {
+    "img": "/images/feature/f3.png",
+    "name": "Save Money"
+  },
+  {
+    "img": "/images/feature/f4.png",
+    "name": "Promotions"
+  },
+  {
+    "img": "/images/feature/f5.png",
+    "name": "Happy Sell"
+  },
+  {
+    "img": "/images/feature/f6.png",
+    "name": "F24/7 Support"
+  }
+]
