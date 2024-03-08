@@ -10,6 +10,7 @@ import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { GlobalStyle } from "./GlobalStyle";
+import NewsLetter from "./components/NewsLetter";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route exact path="/contact" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <NewsLetter/>
         <Footer />
       </Main>
     </>
