@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Heading from "../components/Heading";
+import ProductSecion from "../components/ProductSecion";
 
 const Shop = () => {
   let value = {
@@ -12,6 +13,7 @@ const Shop = () => {
   return (
     <Wrapper>
       <Heading value={value} />
+      <ProductSecion />
     </Wrapper>
   );
 };

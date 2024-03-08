@@ -7,7 +7,6 @@ const ProductReducer = (state, action) => {
       };
 
     case "SET_API_DATA":
-      //   console.log(state.product);
       return {
         ...state,
         product: action.payload,
